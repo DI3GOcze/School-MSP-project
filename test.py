@@ -18,6 +18,10 @@ y = df['yi'].to_numpy()
 
 z = df['17'].to_numpy()
 
+ax = plt.axes(projection='3d')
+ax.scatter(x, y, z, c=z, cmap='Greens')
+plt.show()
+
 b1 = -20.08858467
 b2 = -3.71427772
 b3 = 1.21821486
